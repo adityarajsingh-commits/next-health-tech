@@ -1,275 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nextgen Healthtech India — technology-driven healthcare solutions for a healthier tomorrow.">
-  <title>Nextgen Healthtech India | Transform Your Health, Transform Your Future</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nextgen Healthtech India - Healthcare technology and digital health solutions.">
+<title>Home | Nextgen Healthtech India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span>Healthcare innovation, powered by technology.</span>
-      <a href="#contact">Let's talk <span>→</span></a>
-    </div>
-  </div>
+<header class="navbar">
+<div class="container nav-inner">
+<a class="brand" href="index.html"><img src="assets/logo.jpeg" alt="Nextgen Healthtech India"></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a class="nav-btn" href="contact.html">Get in Touch ↗</a>
+</nav>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+</div>
+</header>
+<main>
 
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a class="brand" href="#home" aria-label="Nextgen Healthtech India home">
-        <img src="assets/logo.jpeg" alt="Nextgen Healthtech India logo">
-      </a>
+<section class="hero section">
+<div class="container hero-grid">
+<div>
+<span class="tag">HEALTHCARE × TECHNOLOGY</span>
+<h1>Transform Your <em>Health,</em><br>Transform Your Future.</h1>
+<p>Nextgen Healthtech India combines healthcare expertise with innovative technology to create smarter, accessible and future-ready healthcare solutions.</p>
+<div class="buttons"><a class="btn dark" href="services.html">Explore Our Services →</a><a class="btn" href="contact.html">Contact Us ↗</a></div>
+</div>
+<div class="hero-card"><div class="circle">98<small>%</small></div><h3>Smart Healthcare</h3><p>Technology-driven solutions for a healthier tomorrow.</p></div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<span class="tag">ABOUT NEXTGEN</span><h2>Where healthcare meets <em>technology.</em></h2>
+<p class="wide">We believe technology should simplify healthcare, improve efficiency and create better experiences for patients, professionals and healthcare organizations. Our approach combines innovation, thoughtful design and dependable digital solutions.</p>
+<div class="grid-3">
+<div class="card"><b>01</b><h3>Innovation First</h3><p>Modern ideas and practical technology designed around real healthcare needs.</p></div>
+<div class="card"><b>02</b><h3>Patient-Centric</h3><p>Solutions shaped around accessibility, usability and a better user experience.</p></div>
+<div class="card"><b>03</b><h3>Future Ready</h3><p>Scalable digital thinking that helps healthcare organizations move forward.</p></div>
+</div>
+</div>
+</section>
+<section class="section soft">
+<div class="container"><span class="tag">OUR SERVICES</span><h2>Solutions built for <em>better healthcare.</em></h2>
+<div class="grid-4">
+<div class="card"><h3>Healthcare Technology</h3><p>Technology-led solutions that make healthcare processes smarter, simpler and more connected.</p><a href="services.html">Learn More →</a></div>
+<div class="card"><h3>Digital Health</h3><p>Digital experiences designed to support modern healthcare delivery and engagement.</p><a href="services.html">Learn More →</a></div>
+<div class="card"><h3>Healthcare Software</h3><p>Purpose-driven software concepts that help organizations work efficiently.</p><a href="services.html">Learn More →</a></div>
+<div class="card"><h3>Technology & Innovation</h3><p>Future-focused technology thinking for the evolving healthcare ecosystem.</p><a href="services.html">Learn More →</a></div>
+</div></div>
+</section>
+<section class="cta"><div class="container"><span class="tag light">LET'S CONNECT</span><h2>Let's build the future of <em>healthcare together.</em></h2><p>Have an idea, requirement or partnership opportunity? Start a conversation with us.</p><a class="btn light-btn" href="contact.html">Start a Conversation ↗</a></div></section>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav-links" id="navLinks">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#contact">Contact Us</a>
-        <a class="nav-cta" href="#contact">Get in Touch <span>↗</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="eyebrow"><span class="pulse-dot"></span> HEALTHCARE × TECHNOLOGY</div>
-          <h1>Transform your <em>health,</em><br>transform your future.</h1>
-          <p class="hero-copy">
-            Empowering better healthcare through innovative technology, smarter solutions
-            and a future-focused approach.
-          </p>
-          <div class="hero-actions">
-            <a href="#services" class="btn btn-primary">Explore Our Services <span>→</span></a>
-            <a href="#contact" class="btn btn-secondary">Contact Us <span>↗</span></a>
-          </div>
-
-          <div class="hero-trust">
-            <div class="trust-avatars">
-              <span>NH</span><span>+</span><span>AI</span>
-            </div>
-            <div>
-              <strong>Technology-driven care</strong>
-              <small>Built for a healthier tomorrow</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal delay-1">
-          <div class="visual-card">
-            <div class="visual-top">
-              <div class="mini-brand">
-                <span class="heart-icon">♥</span>
-                <span>Nextgen Care</span>
-              </div>
-              <span class="status"><i></i> Connected</span>
-            </div>
-
-            <div class="health-ring">
-              <div class="ring-inner">
-                <span class="ring-label">HEALTH</span>
-                <strong>98<span>%</span></strong>
-                <small>Wellness Index</small>
-              </div>
-            </div>
-
-            <div class="metrics">
-              <div class="metric">
-                <span class="metric-icon">♥</span>
-                <div><strong>72</strong><small>BPM</small></div>
-                <label>Heart Rate</label>
-              </div>
-              <div class="metric">
-                <span class="metric-icon">↗</span>
-                <div><strong>98</strong><small>%</small></div>
-                <label>SpO₂</label>
-              </div>
-              <div class="metric">
-                <span class="metric-icon">≈</span>
-                <div><strong>36.6</strong><small>°C</small></div>
-                <label>Temperature</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="floating-card floating-one">
-            <span class="float-icon">✦</span>
-            <div><strong>Smart</strong><small>Healthcare</small></div>
-          </div>
-          <div class="floating-card floating-two">
-            <span class="check">✓</span>
-            <div><strong>Patient-first</strong><small>Approach</small></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="scroll-hint"><span></span> Scroll to explore</div>
-    </section>
-
-    <section class="trust-strip">
-      <div class="container trust-strip-inner">
-        <p>Technology-driven solutions for a healthier tomorrow.</p>
-        <div class="strip-items">
-          <span>✦ Innovative</span>
-          <span>✦ Patient-Centric</span>
-          <span>✦ Future Ready</span>
-          <span>✦ Reliable</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="container two-col">
-        <div class="section-heading reveal">
-          <span class="section-tag">01 — ABOUT US</span>
-          <h2>Where healthcare meets <em>technology.</em></h2>
-        </div>
-        <div class="about-copy reveal delay-1">
-          <p class="lead">Nextgen Healthtech India is focused on creating smarter, more accessible and future-ready healthcare experiences through technology.</p>
-          <p>We believe technology should simplify healthcare, improve efficiency and create better outcomes. Our approach combines innovation, thoughtful design and dependable digital solutions.</p>
-          <a href="#contact" class="text-link">Discover our story <span>→</span></a>
-        </div>
-      </div>
-
-      <div class="container feature-grid">
-        <article class="feature-card reveal">
-          <span class="feature-number">01</span>
-          <div class="feature-icon">⌁</div>
-          <h3>Innovation First</h3>
-          <p>Modern ideas and practical technology designed around real healthcare needs.</p>
-        </article>
-        <article class="feature-card reveal delay-1">
-          <span class="feature-number">02</span>
-          <div class="feature-icon">◌</div>
-          <h3>Patient-Centric</h3>
-          <p>Solutions shaped around accessibility, usability and a better user experience.</p>
-        </article>
-        <article class="feature-card reveal delay-2">
-          <span class="feature-number">03</span>
-          <div class="feature-icon">↗</div>
-          <h3>Future Ready</h3>
-          <p>Scalable digital thinking that helps healthcare organizations move forward.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <span class="section-tag">02 — OUR SERVICES</span>
-          <h2>Technology designed for <em>better care.</em></h2>
-          <p>Explore our core areas of healthcare technology and digital innovation.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card featured reveal">
-            <div class="service-icon">⌘</div>
-            <span class="service-no">01</span>
-            <h3>Healthcare Technology Solutions</h3>
-            <p>Technology-led solutions that help make healthcare processes smarter, simpler and more connected.</p>
-            <a href="#contact">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-1">
-            <div class="service-icon">◈</div>
-            <span class="service-no">02</span>
-            <h3>Digital Health Services</h3>
-            <p>Digital experiences designed to support modern healthcare delivery and engagement.</p>
-            <a href="#contact">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-2">
-            <div class="service-icon">▦</div>
-            <span class="service-no">03</span>
-            <h3>Healthcare Software</h3>
-            <p>Purpose-driven software concepts that help organizations work efficiently and confidently.</p>
-            <a href="#contact">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-3">
-            <div class="service-icon">✦</div>
-            <span class="service-no">04</span>
-            <h3>Technology & Innovation</h3>
-            <p>Future-focused technology thinking for the evolving healthcare ecosystem.</p>
-            <a href="#contact">Learn more <span>→</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section why-us" id="why-us">
-      <div class="container why-grid">
-        <div class="why-intro reveal">
-          <span class="section-tag">03 — WHY NEXTGEN</span>
-          <h2>Built around <em>trust.</em><br>Driven by innovation.</h2>
-          <p>We bring together healthcare thinking and technology to create solutions that are useful today and ready for tomorrow.</p>
-          <a href="#contact" class="btn btn-dark">Partner With Us <span>↗</span></a>
-        </div>
-        <div class="why-list">
-          <div class="why-item reveal"><span>01</span><div><h3>Reliable Solutions</h3><p>Thoughtful, dependable and designed with purpose.</p></div><b>↗</b></div>
-          <div class="why-item reveal delay-1"><span>02</span><div><h3>Human-Centered Design</h3><p>Technology that keeps people and their experience at the center.</p></div><b>↗</b></div>
-          <div class="why-item reveal delay-2"><span>03</span><div><h3>Scalable Thinking</h3><p>Flexible foundations for evolving healthcare requirements.</p></div><b>↗</b></div>
-          <div class="why-item reveal delay-3"><span>04</span><div><h3>Continuous Innovation</h3><p>Always looking for a smarter way to move healthcare forward.</p></div><b>↗</b></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section" id="contact">
-      <div class="container cta-inner reveal">
-        <div>
-          <span class="section-tag light">04 — LET'S CONNECT</span>
-          <h2>Let’s build the future of <em>healthcare</em> together.</h2>
-          <p>Have an idea, requirement or partnership opportunity? Start a conversation with Nextgen Healthtech India.</p>
-        </div>
-        <a class="btn btn-light" href="mailto:info@nextgenhealthtechindia.com">Start a Conversation <span>↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.jpeg" alt="Nextgen Healthtech India logo">
-        <p>Transform your health, transform your future.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why-us">Why Us</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:info@nextgenhealthtechindia.com">Email Us</a>
-        <a href="#contact">Get in Touch</a>
-      </div>
-      <div>
-        <h4>Follow</h4>
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="Facebook">f</a>
-        </div>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Nextgen Healthtech India. All Rights Reserved.</span>
-      <span>Healthcare × Technology</span>
-    </div>
-  </footer>
-
-  <div class="back-top" id="backTop" aria-label="Back to top">↑</div>
-  <script src="js/script.js"></script>
+</main>
+<footer class="footer">
+<div class="container footer-grid">
+<div><img src="assets/logo.jpeg" alt="Nextgen Healthtech India"><p>Transform your health, transform your future.</p></div>
+<div><h4>Explore</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+<div><h4>Services</h4><a href="services.html">Healthcare Technology</a><a href="services.html">Digital Health</a><a href="services.html">Healthcare Software</a></div>
+<div><h4>Connect</h4><a href="contact.html">Email Us</a><a href="contact.html">Start a Conversation</a></div>
+</div>
+<div class="footer-bottom">© <span id="year"></span> Nextgen Healthtech India. All Rights Reserved.</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
